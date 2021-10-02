@@ -23,7 +23,7 @@ const RestauranteMenu = (props) => {
         total={valorTotal2}
         handler={setValorTotal2}
       />
-      <Text>Total: R$ {valorTotal1 + valorTotal2}</Text>
+      <Text style={styles.valorText}>Total: R$ {valorTotal1 + valorTotal2}</Text>
     </View>
   );
 }
@@ -57,6 +57,11 @@ const styles = StyleSheet.create({
       height: 30,
       padding: 5,
       fontSize: 12,
+  },
+  valorText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign:"right",
   },
   button: {
     marginTop: 10,

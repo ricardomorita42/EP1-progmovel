@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
+import { StyleSheet, Text, View, } from 'react-native';
 import useState from 'react-usestateref'
 
 import RestauranteMenu from './components/RestauranteMenu';

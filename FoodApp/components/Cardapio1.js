@@ -36,7 +36,7 @@ const Cardapio1 = (props) => {
         titulo="Sorvete de Baunilha"
         imagem="sorvete"
         descricao="Sorvete de Baunilha na Casquinha"
-        preco={4}
+        preco={3}
         amount={preco3}
         handler={setPreco3}
       />
