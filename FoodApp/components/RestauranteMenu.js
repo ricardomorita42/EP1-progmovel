@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StyleSheet, View, Text} from 'react-native';
+import useState from 'react-usestateref'
+
 
 import ToggleableMenu from './ToggleableMenu';
 

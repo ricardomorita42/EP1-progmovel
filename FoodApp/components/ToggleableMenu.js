@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import useState from 'react-usestateref'
 
 import Cardapio1 from "./Cardapio1";
 import Cardapio2 from "./Cardapio2";
 
 const ToggleableMenu = (props) => {
   let tipoRestaurante = null
-  let nomeRest = ''
 
   switch (props.id) {
     case 1:

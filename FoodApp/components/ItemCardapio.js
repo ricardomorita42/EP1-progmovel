@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StyleSheet, View, Text, Image, TextInput } from "react-native";
 import Imagens from "./Imagens"
+import useState from 'react-usestateref'
 
 const ItemCardapio = (props) => {
+
   const sanitizedHandler = (number) => {
     number < 0 ? props.handler(0) : props.handler(props.amount-preco);
     };
