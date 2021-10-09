@@ -13,8 +13,6 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
   return (
     <ScrollView style={styles.menuContainer}>
       
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      
       <ToggleableMenu 
         id={1} 
         nomeRest='McDonalds'
