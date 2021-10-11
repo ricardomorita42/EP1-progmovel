@@ -1,5 +1,6 @@
 import React, {useState, Dispatch, SetStateAction} from 'react';
 import { TouchableOpacity, StyleSheet } from 'react-native';
+import { CheckBox } from 'react-native-elements'
 
 import { Text, View } from './Themed';
 

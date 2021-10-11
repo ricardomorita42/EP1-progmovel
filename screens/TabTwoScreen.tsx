@@ -4,6 +4,7 @@ import { CheckBox } from 'react-native-elements/dist/checkbox/CheckBox';
 import { Text, View } from '../components/Themed';
 
 import Weather from '../components/Weather'
+import Tempo from '../components/Tempo'
 
 export default function TabTwoScreen() {
   const [lat, setLat] = useState(23.56);
@@ -12,6 +13,10 @@ export default function TabTwoScreen() {
   
   return (
     <View style={styles.container}>
+      <Tempo />
+
+      {
+      /*
       {
         isLoading==true?
         <>
@@ -46,6 +51,7 @@ export default function TabTwoScreen() {
         :
         <Weather latitude={lat} longitude={long}/>
       }
+      */}
     </View>
   );
 }

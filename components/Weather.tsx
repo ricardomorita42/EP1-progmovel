@@ -6,6 +6,8 @@ import {weatherService} from '../modules/weather/services'
 import {WeatherData} from '../modules/weather/services/interfaces'
 import {WeatherItem} from '../components/weather_item'
 
+import OpenWeatherMap from 'openweathermap-ts';
+
 //Baseado em
 //https://thinhtran3588.medium.com/make-professional-mobile-apps-with-react-native-and-typescript-fetch-apis-24f4bf5fb768
 
@@ -28,10 +30,15 @@ const config = {
   dateFormat: 'DD/MM/YYYY',
 };
 
-export default function Weather() {
+interface props {
+  latitude: number;
+  longitude: number;
+}
+
+export default function Weather({latitude,longitude}:props) {
   const [conditions, setConditions] = useState<Conditions>({
-    long: 23.55,
-    lat: 46.64,
+    long: latitude,
+    lat: longitude,
     city: 'Sao Paulo',
     unit: config.weather.unitCodes.celsius,
     lang: 'vi',

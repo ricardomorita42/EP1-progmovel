@@ -1,4 +1,4 @@
-import {config} from '../../../config/index'
+import {config} from '../../../config'
 import {WeatherData, GetDailyWeatherForecastJsonResult, GetDailyWeatherForecastParams} from './interfaces';
 
 const getDailyWeatherForecast = async (params: GetDailyWeatherForecastParams): Promise<WeatherData[]> => {

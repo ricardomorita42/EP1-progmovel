@@ -56,7 +56,7 @@ export default function Login() {
         disabled={!request}
         title="Login"
         onPress={() => {
-        promptAsync();
+          promptAsync();
         }}
       />
       :
