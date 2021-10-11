@@ -15,6 +15,7 @@ export default function Login() {
   let userData = ''
 
   const [request, response, promptAsync] = Google.useAuthRequest({
+    expoClientId: '548636586279-mdpulhptobr3evm3rdp1lb4p4ukd1jjf.apps.googleusercontent.com',
     androidClientId: '548636586279-8o69114kgd47jlf9ia3lqpat9v6itqk6.apps.googleusercontent.com',
     webClientId: '548636586279-a7rm4r5r7e3qnnbkr2ekjr4lase2e9h9.apps.googleusercontent.com',
   });
@@ -48,7 +49,7 @@ export default function Login() {
   }, [response]);
 
   return (
-    <View>
+    <View style={styles.container}>
      
     {
       isLoading==true?
@@ -60,12 +61,12 @@ export default function Login() {
         }}
       />
       :
-      <View style = {{justifyContent:'center'}}>
-        <Text>Nome: {name} </Text>
-        <Text>E-mail: {email} </Text>
+      <View style = {styles.container}>
+        <Text style={{padding:10}}>Nome: {name} </Text>
+        <Text style={{padding:10}}>E-mail: {email} </Text>
         <Image
           source={{uri:linkImg}}
-          style = {{width:100, height:100}}
+          style = {{width:100, height:100, padding:10}}
         />
       </View>
     }
@@ -75,6 +76,7 @@ export default function Login() {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#f7b733',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

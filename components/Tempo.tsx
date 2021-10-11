@@ -74,13 +74,13 @@ export default function Tempo() {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Escolha uma Cidade:</Text>
       <TextInput
         style={styles.input}
         onChangeText={setCityName}
         value={cityName}
-        placeholder="Sao Paulo"
+        placeholder="São Paulo"
       />
       <Button
         disabled={isLoading}
@@ -100,6 +100,10 @@ export default function Tempo() {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor:'#FAEBD7',
+    borderRadius:5,
+  },
   input: {
     height: 40,
     margin: 12,

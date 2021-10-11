@@ -35,11 +35,12 @@ export default function ItemCardapio({descricao,titulo,imagem,total,handler, pre
         <View style={styles.descriptionContainer}>
           <Text style={styles.cardapioTitle}>{titulo}</Text>
           <Text style={styles.cardapioText}>{descricao}</Text>
+          <Text style={styles.cardapioText}>Preço: R${preco},00</Text>
         </View>
         <View style={styles.quantityContainer}>
-          <Text>R$ {amount * preco}</Text>
+          <Text>R$ {amount * preco},00</Text>
           
-          <View style={{flexDirection:'row'}}>
+          <View style={{backgroundColor:"#FAEBD7",flexDirection:'row'}}>
             <button onClick={() => {
               sanitizedHandler(total-preco);
               setAmount(amount<=0? 0 : amount-1);
@@ -67,7 +68,9 @@ export default function ItemCardapio({descricao,titulo,imagem,total,handler, pre
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor:"#FAEBD7",
     width:'100%',
+    borderRadius:5,
     flexDirection:"row",
     padding:5,
   },
@@ -81,6 +84,7 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   imageContainer: {
+    backgroundColor:"#FAEBD7",
     flex:1,
     justifyContent:'center',
     padding:5,
@@ -91,13 +95,14 @@ const styles = StyleSheet.create({
     height:100,
   },
   descriptionContainer:{
+    backgroundColor:"#FAEBD7",
     flex:3,
     padding:15,
     marginHorizontal:20,
 
   },
   cardapioText:{
-    fontsize:12,
+    fontSize:12,
     alignItems: "flex-start",
     justifyContent:'flex-start',
   },
@@ -108,10 +113,12 @@ const styles = StyleSheet.create({
     justifyContent:'flex-start',
   },
   quantityContainer:{
+    backgroundColor:"#FAEBD7",
     flex:1,
     justifyContent:'center',
   },
   textInput: {
+    backgroundColor:"#FAEBD7",
     padding:5,
     borderWidth:1,
     marginHorizontal:1,

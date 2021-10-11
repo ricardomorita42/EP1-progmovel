@@ -69,6 +69,7 @@ export default function Cardapio2({total,handler}:props) {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor:"#FAEBD7",
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

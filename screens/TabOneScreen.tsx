@@ -34,14 +34,9 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   menuContainer: {
-    backgroundColor: 'white',
-    borderColor: '#D6D7DA',
+    backgroundColor: '#f7b733',
+    borderColor: '#f7b733',
     borderWidth: 2,
     borderRadius: 10,
     padding: 15,

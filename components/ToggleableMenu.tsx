@@ -72,7 +72,7 @@ export default function ToggleableMenu({id, total,handler,nomeRest}:props) {
           <Text style={styles.title}>
             {nomeRest}
           </Text>
-          <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+          <View style={styles.separator} lightColor="#B22222" darkColor="rgba(255,255,255,0.1)" />
         </TouchableOpacity>
         
         {tipoRestaurante}
@@ -85,8 +85,7 @@ export default function ToggleableMenu({id, total,handler,nomeRest}:props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    borderColor: '#D6D7DA',
+    backgroundColor: '#B22222',
     borderWidth: 2,
     borderRadius: 10,
     padding: 15,
